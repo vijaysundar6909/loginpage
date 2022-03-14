@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>students_marks</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    <label>Username</label>
+    <input type="text" name="Username"required> <br><br>
+    <label>Email</label>
+    <input type = "email" name="email"> <br><br>
+    <label>Section</label>
+    <input type = "radio" name="section"> <br><br>
+    <label>Gender</label>
+    <input type="radio" name="gender"> <br><br>
+</form>
+</body>
+</html>

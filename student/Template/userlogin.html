@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user_login</title>
+</head>
+<body>
+ {% if user.is_authenticated %}
+     <a href="/logout"> <button>logout</button></a><br><br>
+    <h1>Hello,{{user.username}}</h1>
+ {%  endif %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <label>Email</label>
+    <input type="email" name="gmail"required> <br><br>
+    <label>English</label>
+    <input type = "number" name="english"> <br><br>
+    <label>Tamil</label>
+    <input type = "number" name="tamil"> <br><br>
+    <label>Maths</label>
+    <input type = "number" name="maths"> <br><br>
+    <label>Science</label>
+    <input type = "number" name="science"> <br><br>
+    <label>Social</label>
+    <input type = "number" name="social"> <br><br>
+    <input type="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>
